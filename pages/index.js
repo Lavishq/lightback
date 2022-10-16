@@ -22,7 +22,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
         <button onClick={(e) => auth.signinWithGitHub()}>Sign In</button>
-        <div>{auth?.user?.email}</div>
+        <div>{auth?.user}</div>
         {auth?.user && (
           <button onClick={(e) => auth.signout()}>Sign Out</button>
         )}
